@@ -1,0 +1,129 @@
+<body>
+  <header class="sticky-top">
+    <nav class="navbar bg-body-tertiary mb-2">
+      <div class="container-fluid bg-primary bg-gradient">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./assets/NBA.png"
+            alt="Logo"
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          Top scorers NBA season 2021
+        </a>
+      </div>
+    </nav>
+  </header>
+  <main
+    class="container-fluid-md d-flex flex-wrap justify-content-center gap-5"
+  >
+    @for(elemento of todosLosDatos; track elemento.id){
+    <div class="card border-info mb-3" style="max-width: 18rem">
+      <div class="card-header fst-italic bg-primary bg-gradient">
+        {{ elemento.player_name }} // Edad: {{ elemento.age }}
+      </div>
+      <div class="d-flex card-body bg-danger bg-opacity-75">
+        <h5 class="card-title fst-italic">
+          Equipo: <br />
+          {{ elemento.team }}
+        </h5>
+        <p
+          class="container d-flex card-text align-items-end fst-italic border border-start-0"
+        >
+          Partidos: {{ elemento.games }} <br />
+          Puntos totales: {{ elemento.PTS }} <br />
+          Triples: {{ elemento.three_fg }} <br />
+          Dobles: {{ elemento.two_fg }} <br />
+          Asistencias: {{ elemento.AST }}
+        </p>
+      </div>
+    </div>
+    <!--<div class="card text-bg-dark mb-3" style="max-width: 18rem">
+    <div class="card-header" class="text-center">Porcentaje de tiros</div>
+    <div class="card-body" class="text-center">
+      <h5 class="card-title" class="text-center">
+        Tiros de campo: {{ elemento.field_attempts }}
+      </h5>
+      <p class="card-text" class="text-center my-5">
+        % total: {{ elemento.field_percent * 100 }} <br />
+        % faltas: {{ elemento.ft_percent * 100 }} <br />
+        % dobles: {{ elemento.two_percent * 100 }} <br />
+        % triples: {{ elemento.three_percent * 100 }}
+      </p>
+    </div>
+  </div>
+  <div class="card" style="max-width: 18rem">
+    <div class="card-header">
+      {{ elemento.player_name }} ({{ elemento.age }}) <br />
+      {{ elemento.team }} {{ elemento.season }}
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Partidos jugados: {{ elemento.games }}</li>
+      <li class="list-group-item">Puntos anotados: {{ elemento.PTS }}</li>
+      <li class="list-group-item">Triples anotados: {{ elemento.three_fg }}</li>
+      <li class="list-group-item">
+        Minutos jugados: {{ elemento.minutes_played }}
+      </li>
+    </ul>
+  </div>-->
+    <!--<p class="d-inline-flex gap-1">
+    <a
+      class="btn btn-primary"
+      data-bs-toggle="collapse"
+      href="#multiCollapseExample1"
+      role="button"
+      aria-expanded="false"
+      aria-controls="multiCollapseExample1"
+      >{{ elemento.player_name }}</a
+    >
+    <button
+      class="btn btn-primary"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#multiCollapseExample2"
+      aria-expanded="false"
+      aria-controls="multiCollapseExample2"
+    >
+      Estadisticas de la temporada 2021
+    </button>
+  </p>
+  <div class="row">
+    <div class="col">
+      <div class="collapse multi-collapse" id="multiCollapseExample1">
+        <div class="card card-body">
+          Equipo: {{ elemento.team }} Edad: {{ elemento.age }} Id:
+          {{ elemento.id }} Partidos Jugados: {{ elemento.games }}
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="collapse multi-collapse" id="multiCollapseExample2">
+        <div class="card card-body">
+          Tiros anotados: {{ elemento.field_goals }} Faltas anotadas:
+          {{ elemento.ft }} Triples anotados: {{ elemento.three_fg }} Dobles
+          anotados: {{ elemento.two_fg }}
+        </div>
+      </div>
+    </div>
+  </div> -->
+    }
+  </main>
+  <footer>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid bg-primary bg-gradient">
+        <a class="navbar-brand" href="https://github.com/juanmeneses0310">
+          <img
+            src="./assets/github.jpg"
+            alt="Logo"
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          Designed by: Juan Meneses
+        </a>
+      </div>
+    </nav>
+  </footer>
+</body>
+<!-- <router-outlet></router-outlet> -->
