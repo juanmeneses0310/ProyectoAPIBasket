@@ -16,10 +16,10 @@
     </nav>
   </header>
   <main
-    class="container-fluid-md d-flex flex-wrap justify-content-center gap-5"
+    class="container-fluid-md d-flex flex-wrap justify-content-center gap-4"
   >
     @for(elemento of todosLosDatos; track elemento.id){
-    <div class="card border-info mb-3" style="max-width: 18rem">
+    <div class="card border-info" style="max-width: 18rem">
       <div class="card-header fst-italic bg-primary bg-gradient">
         {{ elemento.player_name }} // Edad: {{ elemento.age }}
       </div>
